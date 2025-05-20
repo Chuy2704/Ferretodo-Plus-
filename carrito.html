@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito de Compras - Ferretodo+</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Carrito de Compras</h1>
+    <nav>
+        <nav class="navbar">
+            <div class="logo">
+              <a href="index.html">Ferretodo+</a>
+            </div>
+            <ul class="menu">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="catalogo.html">Catálogo</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="carrito.html" class="activo">Carrito</a></li>
+            </ul>
+          </nav>
+  </header>
+
+  <main class="contenedor">
+    <h2>Productos en tu carrito</h2>
+    <table id="tabla-carrito">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody id="carrito-body">
+        <!-- Productos cargados por JS -->
+      </tbody>
+    </table>
+
+    <div class="carrito-total">
+      <p>Total a pagar: <span id="total">0</span> MXN</p>
+      <button id="vaciar-carrito" class="btn">Vaciar Carrito</button>
+    </div>
+  </main>
+
+  <footer>
+  
+  </footer>
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <div class="footer-logo">
+        <h3>Ferretodo+</h3>
+        <p>Todo lo que necesitas para tu proyecto está aquí.</p>
+      </div>
+  
+      <div class="footer-enlaces">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p>Email: contacto@ferretodoplus.com</p>
+        <p>Teléfono: (55) 1234-5678</p>
+        <p>Dirección: Av. Principal #123, CDMX</p>
+      </div>
+  
+      <div class="footer-redes">
+        <h4>Síguenos</h4>
+        <div class="redes-iconos">
+          <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/icons/x.svg" alt="Twitter"></a>
+          <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-copy">
+      <p>&copy; 2025 Ferretodo+. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
+

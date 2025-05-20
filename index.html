@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferretodo+</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Encabezado con logo y menú -->
+  <header>
+    <div class="container header-content">
+      <img src="img/logo.png" alt="Ferretodo+" class="logo">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Todo lo que necesitas para construir, reparar o mejorar</h1>
+      <p>Compra en línea herramientas de calidad al mejor precio</p>
+      <a href="catalogo.html" class="btn-cta">Explorar Catálogo</a>
+    </div>
+  </section>
+
+  <!-- Productos destacados -->
+  <section class="destacados">
+    <h2>Productos Destacados</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="img/productos/taladro.jpg" alt="Taladro eléctrico">
+        <h3>Taladro Eléctrico</h3>
+        <p>Potencia, precisión y buen precio.</p>
+        <a href="catalogo.html" class="btn">Ver más</a>
+      </div>
+      <div class="producto">
+        <img src="img/productos/martillo.jpg" alt="Martillo de acero">
+        <h3>Martillo de Acero</h3>
+        <p>Durabilidad garantizada para cualquier trabajo.</p>
+        <a href="catalogo.html" class="btn">Ver más</a>
+      </div>
+      <!-- Más productos opcionales -->
+    </div>
+  </section>
+
+  <!-- Contacto rápido y redes -->
+  <section class="contacto-rapido">
+    <h2>¿Tienes dudas? Escríbenos</h2>
+    <form id="form-contacto">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="redes">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <!-- Mapa y footer -->
+  <footer>
+    <div class="container">
+      <p>📍 Ubicación: Av. Principal 123, Ciudad Industrial</p>
+      <p>📞 Teléfono: +52 55 1234 5678 | ✉ contacto@ferretodoplus.com</p>
+      <div id="mapa"></div>
+      <p>&copy; 2025 Ferretodo+. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Google Maps Script -->
+  <script>
+    function initMap() {
+      var ubicacion = { lat: 19.4326, lng: -99.1332 };
+      var map = new google.maps.Map(document.getElementById("mapa"), {
+        zoom: 14,
+        center: ubicacion,
+      });
+      new google.maps.Marker({ position: ubicacion, map: map });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

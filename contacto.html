@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Ferretodo+</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="container header-content">
+      <img src="img/logo.png" alt="Ferretodo+" class="logo">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de Contacto -->
+  <section class="destacados">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas, pedidos o necesitas una cotización? ¡Escríbenos!</p>
+
+    <div class="contacto-grid">
+      <!-- Formulario -->
+      <form class="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+
+      <!-- Datos y mapa -->
+      <div class="info-contacto">
+        <h3>Información de contacto</h3>
+        <p><strong>Dirección:</strong> Calle Principal #123, Col. Centro, Ciudad</p>
+        <p><strong>Teléfono:</strong> +52 123 456 7890</p>
+        <p><strong>Email:</strong> contacto@ferretodoplus.com</p>
+
+        <h4>Ubicación</h4>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.026325354259!2d-103.34960968552522!3d20.676820086196287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428adfcb4dfb8e3%3A0x8895acb279bba60f!2sGuadalajara%2C%20Jalisco!5e0!3m2!1ses!2smx!4v1683945220422!5m2!1ses!2smx" 
+          width="100%" 
+          height="250" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ferretodo+. Todos los derechos reservados.</p>
+      <div class="redes">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a> |
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a> |
+        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
